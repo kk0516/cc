@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>leyou</artifactId>
+        <groupId>com.leyou.parent</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.leyou.common</groupId>
+    <artifactId>leyou-registry</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+        </dependency>
+        <!--已经废弃,spring-cloud-starter-netflix-eureka-server是替代引用!!-->
+        <!--spring-cloud-starter-netflix-eureka-server是替代引用ring boot、spring cloud里面很多引用、配置更新的很快,之前测试 actuator时候,发现很多boot1里支持的端点,2里移除或者改名字了-->
+    </dependencies>
+</project>
